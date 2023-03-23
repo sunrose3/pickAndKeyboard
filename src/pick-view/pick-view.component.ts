@@ -27,14 +27,6 @@ export class PickViewComponent {
         console.log(data, indexArr);
       }
     });
-    //----------------------------------------------
-    // 实例化之后，对实例用功能函数操作 
-    /** 设置控件的标题 */
-    this.nonmalSelect.setTitle('啦啦啦(๑•̀ㅁ•́ฅ)');
-    /** 更新第0个轮子的数据，数据变为英文的星期几 */
-    this.nonmalSelect.updateWheel(0, ['sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']);
-    /** 重新定位第1个轮子的位置，将第1个轮子的第0个数据改为当前选中。*/
-    this.nonmalSelect.locatePosition(1, 0);
     
     this.noGangedSelect = new MobileSelect({
       trigger: this.noGangedRef.nativeElement,
@@ -50,6 +42,14 @@ export class PickViewComponent {
         console.log(data, indexArr);
       }
     });
+    //----------------------------------------------
+    // 实例化之后，对实例用功能函数操作 
+    /** 设置控件的标题 */
+    this.nonmalSelect.setTitle('啦啦啦(๑•̀ㅁ•́ฅ)');
+    /** 更新第0个轮子的数据，数据变为英文的星期几 */
+    this.nonmalSelect.updateWheel(0, ['sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']);
+    /** 重新定位第1个轮子的位置，将第1个轮子的第0个数据改为当前选中。*/
+    // this.nonmalSelect.locatePosition(1, 0);
   }
 
   ngOnDestroy() {
