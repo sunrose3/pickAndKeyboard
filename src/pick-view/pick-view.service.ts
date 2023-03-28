@@ -1,8 +1,10 @@
+
 import { Injectable } from '@angular/core';
+import * as data from '../assets/until/area.json';
 
 @Injectable()
 export class PickViewServices {
-  constructor() { }
+  constructor(){}
   nonmalData: any[] = [
     { data: ["周日", "周一", "周二", "周三", "周四", "周五", "周六"] },
   ];
@@ -85,4 +87,5 @@ export class PickViewServices {
     ]
   }];
 
+  areaData: any[] = [{data:data}];
 }

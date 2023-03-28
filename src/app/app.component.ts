@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  link = 'https://github.com/sunrose3/pickAndKeyboard';
   title = 'pickView';
 }
