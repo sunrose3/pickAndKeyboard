@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-
-.ms-mobile-select .ms-content{
-    width:  50% !important;
+@media (min-width: 769px) {
+  .ms-mobile-select .ms-content {
+    width: 50% !important;
     margin-left: 25%;
+  }
 }
