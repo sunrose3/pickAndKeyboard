@@ -24,13 +24,37 @@
 </div>
 
 <div class="content" role="main">
-  <h2>省市区 pick</h2>
+  <h2
+    dStepsGuide
+    [pageName]="'step-basic-demo'"
+    [steps]="steps"
+    [stepIndex]="0"
+    [extraConfig]="config"
+    [dStepsGuidePosition]="'bottom'"
+  (operateChange)="operateChange($event)"
+  >
+    省市区 pick
+  </h2>
   <pick-view></pick-view>
 
-  <h2>键盘 keyboard</h2>
+  <h2
+    dStepsGuide
+    [pageName]="'step-basic-demo'"
+    [steps]="steps"
+    [stepIndex]="1"
+    [extraConfig]="config"
+    [dStepsGuidePosition]="'bottom'"
+  >
+    键盘 keyboard
+  </h2>
   <app-keyboard></app-keyboard>
 
-  <div class="tip">提示: PC浏览器请切换到仿真设备查看</div>
+  <div class="tip" 
+    dStepsGuide
+    [pageName]="'step-basic-demo'"
+    [steps]="steps"
+    [stepIndex]="2"
+    [extraConfig]="config">提示: PC浏览器请切换到仿真设备查看</div>
 
   <!-- Footer -->
   <footer>

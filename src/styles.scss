@@ -5,3 +5,23 @@
     margin-left: 25%;
   }
 }
+
+.ms-mobile-select {
+  .ms-title {
+    font-size: 18px !important;
+    padding: 0 10% !important;
+    color: #333333 !important;
+  }
+  .ms-btn-bar {
+    border-bottom: 0px solid #e3e2e2 !important;
+    font-size: 15px;
+    height: 50px !important;
+    position: relative;
+    text-align: center;
+    line-height: 50px !important;
+  }
+
+  .ms-ensure {
+    color: #009ef7 !important;
+  }
+}

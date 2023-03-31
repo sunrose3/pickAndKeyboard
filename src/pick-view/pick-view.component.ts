@@ -1,6 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import mobileSelect from 'mobile-select';
-import MobileSelect from "mobile-select";
 import { PickViewServices } from './pick-view.service';
 
 @Component({
@@ -47,6 +46,10 @@ export class PickViewComponent {
     this.areaSelect = new mobileSelect({
       trigger: this.areaRef.nativeElement,
       wheels: this.service.areaData,
+      maskOpacity:0.4,
+      ensureBtnColor:"#009ef7",
+      title: '省市区选择',
+      textColor:"#666666",
       onChange: function (data, indexArr) {
         console.log(data, indexArr);
       }
@@ -55,7 +58,7 @@ export class PickViewComponent {
     //----------------------------------------------
     // 实例化之后，对实例用功能函数操作 
     /** 设置控件的标题 */
-    this.areaSelect.setTitle('省市区选择');
+    // this.areaSelect.setTitle('省市区选择');
     /** 更新第0个轮子的数据，数据变为英文的星期几 */
     // this.nonmalSelect.updateWheel(0, ['sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']);
     /** 重新定位第1个轮子的位置，将第1个轮子的第0个数据改为当前选中。*/
