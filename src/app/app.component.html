@@ -31,7 +31,7 @@
     [stepIndex]="0"
     [extraConfig]="config"
     [dStepsGuidePosition]="'bottom'"
-  (operateChange)="operateChange($event)"
+    (operateChange)="operateChange($event)"
   >
     省市区 pick
   </h2>
@@ -49,14 +49,17 @@
   </h2>
   <app-keyboard></app-keyboard>
 
-  <div class="tip" 
+  <div
+    class="tip"
     dStepsGuide
     [pageName]="'step-basic-demo'"
     [steps]="steps"
     [stepIndex]="2"
-    [extraConfig]="config">提示: PC浏览器请切换到仿真设备查看</div>
+    [extraConfig]="config"
+  >
+    提示: PC浏览器请切换到仿真设备查看
+  </div>
 
-  <!-- Footer -->
   <footer>
     <div>
       <div>
@@ -115,3 +118,5 @@
     />
   </svg>
 </div>
+
+<d-position></d-position>

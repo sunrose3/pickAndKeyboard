@@ -1,40 +1,5 @@
 import { Component } from '@angular/core';
-import { StepsGuideService } from 'ng-devui';
-
-export const positionData = [
-  {
-    title: 'Top Left',
-    content: 'Guide Content',
-  },
-  {
-    title: 'Top',
-    content: 'Guide Content',
-  },
-  {
-    title: 'Top Right',
-    content: 'Guide Content',
-  },
-  {
-    title: 'Right',
-    content: 'Guide Content',
-  },
-  {
-    title: 'Bottom Right',
-    content: 'Guide Content',
-  },
-  {
-    title: 'Bottom',
-    content: 'Guide Content',
-  },
-  {
-    title: 'Bottom Left',
-    content: 'Guide Content',
-  },
-  {
-    title: 'Left',
-    content: 'Guide Content',
-  },
-];
+import { StepsGuideService } from 'src/steps-guide';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -97,8 +62,10 @@ export class AppComponent {
     this.currentStepOutPut = response;
     if (response.clickType === 'close' && response.currentIndex === 2) {
       localStorage.removeItem('devui_guide_step-position-demo');
-      this.stepService.setSteps(positionData);
+      // this.stepService.setSteps(positionData);
       this.stepService.setCurrentIndex(0);
     }
   }
+
+  
 }
