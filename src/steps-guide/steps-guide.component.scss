@@ -8,8 +8,8 @@
   height: 20%;
 }
 :host.devui-step-item {
-  width: 400px;
-  min-height: 160px;
+  width: 360px;
+  // min-height: 160px;
   background: $devui-brand;
   box-shadow: $devui-shadow-length-feedback-overlay $devui-light-shadow;
   border-radius: $devui-border-radius-feedback;
